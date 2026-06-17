@@ -1,7 +1,12 @@
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -9,20 +14,130 @@ body {
   font-size: 1.6rem;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-.navbar{
-  display: flex;
-  justify-content: space-between;
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
 }
-.navbar-logo{
-  flex-basis: 25%;
-  background-image: url("../img/logo.png");
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.navbar-logo img {
+.navbar-logo {
+  flex-basis: 5%;
+}
+
+.navbar-links {
+  flex-basis: 60%;
+  justify-content: center;
+}
+
+.navbar-links ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-links ul li {
+  list-style: none;
+  margin: 2rem;
+}
+.navbar-links ul li a {
+  color: #003366;
   text-decoration: none;
-  
+}
+.navbar-btn {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-amarillo {
+  background-color: #ffaa00;
+  padding: 1.5rem 3rem;
+  border-radius: 9rem;
+  text-decoration: none;
+  color: #003366;
+}
+
+.banner {
+  background-image: url("../img/banner.png");
+  height: 40rem;
+  background-position: center;
+  background-size: cover;
+}
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 18rem;
+}
+
+.texto-amarillo {
+  color: #ffaa00;
+}
+
+.texto-azul {
+  color: #003366;
+}
+
+.texto-verde {
+  color: #a3d9a5;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+.margen-boton {
+  margin: 2rem 0;
+}
+
+.btn-blanco {
+  padding: 1.5rem 3rem;
+  border-radius: 9rem;
+  text-decoration: none;
+  color: white;
+  border: solid white;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacto-datos {
+  background-color: #d9d9d9;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+}
+.formulario {
+  width: 50rem;
+  padding: 4rem;
+  border: solid #d9d9d9;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #003366;
+  margin: 2rem 0;
+}
+
+input,
+textarea {
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+  border: solid #d9d9d9;
 }

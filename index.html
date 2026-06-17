@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Higiene Industrial Plus EIRP</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <!--Inicio Header-->
     <header>
-      <nav class="navbar">
+      <nav class="navbar contenedor">
         <div class="navbar-logo">
           <a href="#">
-            <img src="" alt="Logo EIRP+" />
+            <img src="img/logo.png" alt="Logo EIRP+" />
           </a>
         </div>
         <div class="navbar-links">
@@ -26,26 +26,29 @@
           </ul>
         </div>
         <div class="navbar-btn">
-          <a href="#">Solicitar cotización</a>
+          <a class="btn-amarillo" href="#">Solicitar cotización</a>
         </div>
       </nav>
+      <div class="banner">
+        <div class="contenedor banner-info">
+          <p class="texto-amarillo">Operación industrial continua</p>
+
+          <h1 class="texto-blanco">Higiene Industrial Plus EIRP</h1>
+
+          <h2 class="texto-verde">Soluciones limpias para obras seguras</h2>
+
+          <p class="texto-blanco">
+            Limpieza, seguridad y energía para minería e industria, con
+            respuesta operativa 24/7 en el Norte Grande.
+          </p>
+          <div class="margen-boton">
+            <a class="btn-amarillo" href="#">Solicitar cotización</a>
+            <a class="btn-blanco" href="#">Ver servicios</a>
+          </div>
+        </div>
+      </div>
+      <!--Fin Header-->
     </header>
-
-    <p>Operación industrial continua</p>
-
-    <h1>Higiene Industrial Plus EIRP</h1>
-
-    <h2>Soluciones limpias para obras seguras</h2>
-
-    <p>
-      Limpieza, seguridad y energía para minería e industria, con respuesta
-      operativa 24/7 en el Norte Grande.
-    </p>
-
-    <a href="#">Solicitar cotización</a>
-    <a href="#">Ver servicios</a>
-    <!--Fin Header-->
-
     <!--Inicio nosotros-->
     <p>Nosotros</p>
 
@@ -181,49 +184,59 @@
     <!--Fin Cobertura-->
 
     <!--Inicio contacto-->
-    <p>Contacto</p>
+    <main>
+      <article class="contacto contenedor">
+        <section>
+          <p class="texto-amarillo">Contacto</p>
 
-    <h2>Solicita una cotización</h2>
+          <h2 class="texto-azul">Solicita una cotización</h2>
 
-    <p>
-      Completa el formulario y cuéntanos qué tipo de servicio necesita tu
-      empresa.
-    </p>
+          <p>
+            Completa el formulario y cuéntanos qué tipo de servicio necesita tu
+            empresa.
+          </p>
+          <div class="contacto-datos">
+            <p><strong>Teléfono:</strong> (+56) 9 8835 5559</p>
+            <p><strong>Email:</strong> Empresas.higiene.eirp@gmail.com</p>
+            <p><strong>Dirección:</strong> José Antonio Aldunate 2811, Arica</p>
+          </div>
+        </section>
+        <section>
+          <form class="formulario">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text" placeholder="Ingresa tu nombre" />
+            </div>
 
-    <p><strong>Teléfono:</strong> (+56) 9 8835 5559</p>
-    <p><strong>Email:</strong> Empresas.higiene.eirp@gmail.com</p>
-    <p><strong>Dirección:</strong> José Antonio Aldunate 2811, Arica</p>
+            <div>
+              <label for="empresa">Empresa</label>
+              <input type="text" placeholder="Nombre de la empresa" />
+            </div>
 
-    <form>
-      <h3>Datos de contacto</h3>
+            <div>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" placeholder="Ej: +56 9 1234 5678" />
+            </div>
 
-      <div>
-        <label for="nombre">Nombre</label>
-        <input id="nombre" type="text" placeholder="Ingresa tu nombre" />
-      </div>
+            <div>
+              <label for="email">Correo electrónico</label>
+              <input type="email" placeholder="correo@empresa.cl" />
+            </div>
 
-      <div>
-        <label for="empresa">Empresa</label>
-        <input type="text" placeholder="Nombre de la empresa" />
-      </div>
-
-      <div>
-        <label for="telefono">Teléfono</label>
-        <input type="tel" placeholder="Ej: +56 9 1234 5678" />
-      </div>
-
-      <div>
-        <label for="email">Correo electrónico</label>
-        <input type="email" placeholder="correo@empresa.cl" />
-      </div>
-
-      <div>
-        <label for="mensaje">Mensaje</label>
-        <textarea rows="5" placeholder="Describe tu requerimiento"></textarea>
-      </div>
-
-      <button type="submit">Enviar solicitud</button>
-    </form>
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                rows="5"
+                placeholder="Describe tu requerimiento"
+              ></textarea>
+            </div>
+            <button class="btn-amarillo margen-boton" type="submit">
+              Enviar solicitud
+            </button>
+          </form>
+        </section>
+      </article>
+    </main>
     <!--Fin contacto-->
 
     <!--Inicio footer-->
